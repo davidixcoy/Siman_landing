@@ -1,4 +1,8 @@
-
+.caja {
+    width: 100%;
+    max-width: 100vw; /* Establece un límite máximo del 100% del ancho de la ventana del navegador */
+    overflow-x: hidden; /* Para evitar el scroll horizontal */
+}
 .container-fluid{
     background: #8E0E00;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
@@ -19,6 +23,17 @@ background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, F
     color:#8E0E00;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1F1C18, #8E0E00);;
+
+    overflow: hidden;
+}
+
+.card-img-top{
+    transition: transform 0.2s ease;
+    
+}
+
+.card:hover .card-img-top{
+    transform: scale(1.1);
 }
 
 .card-title{
